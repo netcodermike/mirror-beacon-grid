@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rotate mirrors to route a beam around a grid and light the beacon in two original puzzles.">
+  <title>Mirror Beacon Grid</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+<main>
+  <div class="heading">
+    <div><h1>Mirror Beacon Grid</h1><p>Rotate mirrors to route a beam around a grid and light the beacon in two original puzzles.</p></div>
+    <a href="https://github.com/netcodermike/mirror-beacon-grid">Project source ↗</a>
+  </div>
+  <div class="workspace">
+    <section class="panel stage" aria-label="Project workspace">
+      <div id="mirror-board" class="mirror-board" role="group" aria-label="Beam puzzle board"></div><p id="reading" role="status"></p>
+    </section>
+    <section class="panel controls" aria-label="Controls">
+      <label for="level">Puzzle<select id="level"><option value="0">First signal</option><option value="1">Around the corner</option></select></label>
+           <p>Turn the mirrors to send the beam from the arrow to the beacon. Click a mirror or focus it and press Space.</p>
+           <button type="button" id="reset">Reset puzzle</button>
+    </section>
+  </div>
+</main>
+</body>
+</html>
